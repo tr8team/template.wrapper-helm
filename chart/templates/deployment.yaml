@@ -12,11 +12,12 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx-{{ .Values.appVersion }}
         {{ .Values.key }}: {{ .Values.value }}
+
     spec:
       containers:
         - name: nginx
-          image: {{ .Values.app }}
+          image: nginx:latest
           ports:
             - containerPort: 80

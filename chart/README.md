@@ -8,7 +8,7 @@ Sample Chart Description
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| app | string | `"nginx:5.0.0"` | app image with version tag |
+| appVersion | string | `"5.0.0"` | app image with version tag |
 | labels.layer | string | `"3"` | What layer is this service |
 | labels.platform | string | `"develop"` | The platform to deploy the chart |
 | labels.service | string | `"registry"` | What service is this application |

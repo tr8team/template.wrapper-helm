@@ -9,4 +9,4 @@ labels:
   team: ESD
 
 # -- app image with version tag
-app: nginx:{{ .Env.VERSION }}
+appVersion: {{ .Env.VERSION }}
