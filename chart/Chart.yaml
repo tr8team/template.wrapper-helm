@@ -1,0 +1,9 @@
+apiVersion: v2
+name: sample-chart-name
+description: Sample Chart Description
+
+type: application
+
+version: 5.0.0
+
+appVersion: "0.1.0"

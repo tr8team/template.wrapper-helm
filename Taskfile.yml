@@ -1,0 +1,79 @@
+version: "3"
+
+includes:
+  ci: ./scripts/Taskfile.ci.yml
+  fmt: ./scripts/Taskfile.fmt.yml
+  ide: ./scripts/Taskfile.ide.yml
+  lint: ./scripts/Taskfile.lint.yml
+  util: ./scripts/Taskfile.util.yml
+  enforce: ./scripts/Taskfile.enforce.yml
+
+env:
+  RELEASE_NAME: sample-release
+
+tasks:
+  setup:
+    desc: Setup the repository for development
+    cmds:
+      - pre-commit install -c ./config/.pre-commit-config.yaml --install-hooks
+      - pre-commit install -c ./config/.pre-commit-config.yaml -t commit-msg
+      - precommit-nix-patch patch
+
+  # Checks
+  check:
+    desc: Run all checks
+    cmds:
+      - task: fmt
+      - task: lint
+      - task: enforce
+
+  lint:
+    desc: Run all Linters
+    cmds:
+      - task: lint:default
+
+  fmt:
+    desc: Run all Formatters
+    cmds:
+      - task: fmt:default
+
+  enforce:
+    desc: Run all Enforces
+    cmds:
+      - task: enforce:default
+
+  # Utility
+  start:cluster:
+    desc: Starts the playground cluster to test helm charts
+    cmds:
+      - ./scripts/local/create-k3d-cluster.sh
+  stop:cluster:
+    desc: Destroys the playground cluster to test helm charts
+    cmds:
+      - ./scripts/local/delete-k3d-cluster.sh
+
+  # Helm Operations
+  publish:
+    desc: Generate chart for publishing
+
+  update:
+    desc: Update Helm dependencies
+    dir: chart
+    cmds:
+      - helm dependency update
+      - helm dependency build
+
+  debug:
+    desc: Debug the helm chart
+    cmds:
+      - helm template $RELEASE_NAME ./chart --debug {{.CLI_ARGS}}
+
+  install:
+    desc: Installs the chart
+    cmds:
+      - helm upgrade --install $RELEASE_NAME ./chart {{.CLI_ARGS}}
+
+  remove:
+    desc: Removes an installed release
+    cmds:
+      - helm uninstall $RELEASE_NAME

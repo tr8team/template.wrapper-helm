@@ -1,0 +1,12 @@
+labels:
+  # -- The platform to deploy the chart
+  platform: develop
+  # -- What service is this application
+  service: registry
+  # -- What layer is this service
+  layer: "3"
+  # -- Which team is in charge of this chart
+  team: ESD
+
+# -- app image with version tag
+app: nginx:5.0.0
