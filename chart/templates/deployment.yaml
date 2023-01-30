@@ -8,11 +8,12 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: nginx-{{ .Values.appVersion }}
   template:
     metadata:
       labels:
         app: nginx-{{ .Values.appVersion }}
+      annotations:
         {{ .Values.key }}: {{ .Values.value }}
 
     spec:
