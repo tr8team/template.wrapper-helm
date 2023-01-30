@@ -76,6 +76,7 @@ tasks:
   install:
     desc: Installs the chart
     cmds:
+      - ./scripts/local/chart-substituted.sh
       - helm upgrade --install $RELEASE_NAME ./chart {{.CLI_ARGS}}
 
   remove:
