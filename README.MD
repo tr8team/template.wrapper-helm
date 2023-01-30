@@ -4,6 +4,18 @@ This template is used to create wrapper charts to deploy system applications via
 
 Documentation of the chart can be found in [here](./chart/README.md)
 
+# Change Checklist
+
+- [ ] README.MD Title and description
+- [ ] README.MD Author
+- [ ] `Taskfile.yml` line 12 `RELEASE_NAME` for local testing
+- [ ] `chart/Chart.tpl.yaml`'s `name`, `description`, `appVersion` and if needed, add `dependency`
+- [ ] `chart/values.tpl.yaml` and `chart/linter_values.yaml` for the new values you want to use
+- [ ] `chart/templates/_helper.tpl` change all functions to your new `chart/Chart.yaml` `name` field
+- [ ] Remove `chart/templates/deployment.yaml`
+- [ ] Update `chart/templates/NOTES.txt` for post-installation notes
+-
+
 ## Pre-requisite
 
 All dependencies are pre-install via `nix` and activated via `direnv`
