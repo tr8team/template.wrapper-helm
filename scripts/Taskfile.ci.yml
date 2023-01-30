@@ -14,7 +14,7 @@ tasks:
   precommit:
     desc: Execute pre-commit for CI
     cmds:
-      - nix-shell nix/shells.nix -A ci --run scripts/ci/pre-commit.sh
+      - ./scripts/ci/pre-commit.sh
 
   emulate:pre-commit:
     desc: Execute pre-commit for CI with full emulation

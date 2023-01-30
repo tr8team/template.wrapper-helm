@@ -53,6 +53,9 @@ tasks:
       - ./scripts/local/delete-k3d-cluster.sh
 
   # Helm Operations
+  local:
+    desc: Generate chart for local usage
+
   publish:
     desc: Generate chart for publishing
     cmds:

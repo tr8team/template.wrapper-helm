@@ -6,9 +6,12 @@ with pkgs;
     coreutils
     gnugrep
     jq
+    yq-go
+
   ];
 
   main = [
+    gomplate
     pls
     kubernetes-helm
     kubectl
@@ -34,7 +37,6 @@ with pkgs;
 
   release = [
     helm-docs
-    gomplate
     nodejs
     npm
     sg

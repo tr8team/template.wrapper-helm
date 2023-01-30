@@ -33,3 +33,9 @@ repos:
       - id: shfmt
       - id: exec-enforce
       - id: releaser-enforce
+  - repo: local
+    hooks:
+      - id: enforce-chart-sync
+        name: Enforce Chart.tpl.yaml and Chart.yaml is synced
+        entry: ./scripts/local/chart-substituted.sh
+        language: system
