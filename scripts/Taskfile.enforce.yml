@@ -9,7 +9,9 @@ tasks:
     cmds:
       - task: exec:scripts
       - task: releaser
+      - task: chart:sync
       - task: helm:docs
+
   exec:scripts:
     desc: Ensure all shell scripts are executable
     cmds:
@@ -22,7 +24,12 @@ tasks:
       - task: util:pc
         vars:
           PC_ID: releaser-enforce
-
+  chart:sync:
+    desc: Ensure Chart.tpl.yaml and Chart.yaml is synced
+    cmds:
+      - task: util:pc
+        vars:
+          PC_ID: enforce-chart-sync
   helm:docs:
     desc: Generate Helm Docs
     cmds:

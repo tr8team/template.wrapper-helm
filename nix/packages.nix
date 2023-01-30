@@ -28,7 +28,7 @@ let
           gnugrep
 
           jq
-
+          yq-go
           kubernetes-helm
           kubectl
           gitlint
