@@ -38,10 +38,12 @@ The task runner has convenience commands for development and testing
 
 | Action                                      | Command                 |
 | ------------------------------------------- | ----------------------- |
+| Setup the repository                        | `pls setup`             |
 | Start playground cluster to test helm chart | `pls start:cluster`     |
 | Stop playground cluster                     | `pls stop:cluster`      |
 | Install charts                              | `pls install`           |
 | Uninstall charts                            | `pls remove`            |
+| Install chart dependency                    | `pls deps`              |
 | Update chart dependency                     | `pls update`            |
 | Debug chart                                 | `pls debug`             |
 | Publish chart                               | `pls publish <version>` |
