@@ -33,6 +33,7 @@ with pkgs;
   ];
 
   release = [
+    helm-docs
     gomplate
     nodejs
     npm

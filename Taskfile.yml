@@ -55,6 +55,8 @@ tasks:
   # Helm Operations
   publish:
     desc: Generate chart for publishing
+    cmds:
+      - ./scripts/ci/publish.sh {{.CLI_ARGS}}
 
   update:
     desc: Update Helm dependencies

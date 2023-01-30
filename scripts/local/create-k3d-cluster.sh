@@ -24,5 +24,5 @@ mkdir -p "$HOME/.kube/configs"
 mkdir -p "$HOME/.kube/k3dconfigs"
 k3d kubeconfig get "$clusterName" >"$HOME/.kube/k3dconfigs/k3d-$clusterName"
 KUBECONFIG=$(cd ~/.kube/configs && find "$(pwd)"/* | awk 'ORS=":"')$(cd ~/.kube/k3dconfigs && find "$(pwd)"/* | awk 'ORS=":"') kubectl config view --flatten >~/.kube/config
-chmod 644 ~/.kube/config
+chmod 600 ~/.kube/config
 echo "✅ Generated kube config file"
