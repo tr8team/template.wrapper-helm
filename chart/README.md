@@ -1,6 +1,6 @@
 # sample-chart-name
 
-![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.0](https://img.shields.io/badge/AppVersion-0.0.0-informational?style=flat-square)
+![Version: 1.1.1](https://img.shields.io/badge/Version-1.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.0](https://img.shields.io/badge/AppVersion-0.0.0-informational?style=flat-square)
 
 Sample Chart Description
 
@@ -8,7 +8,7 @@ Sample Chart Description
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| appVersion | string | `"1.1.0"` | app image with version tag |
+| appVersion | string | `"1.1.1"` | app image with version tag |
 | labels.layer | string | `"3"` | What layer is this service |
 | labels.platform | string | `"develop"` | The platform to deploy the chart |
 | labels.service | string | `"registry"` | What service is this application |

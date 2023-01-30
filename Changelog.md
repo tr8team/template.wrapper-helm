@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/tr8team/helm-wrapper-template/compare/v1.1.0...v1.1.1) (2023-01-30)
+
+
+### Bug Fixes
+
+* releaser not adding helm repository ([318740d](https://github.com/tr8team/helm-wrapper-template/commit/318740d46da0eb3cd6b49c861ccda9d5e49805bb))
+
 ## [1.1.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.0.1...v1.1.0) (2023-01-30)
 
 
