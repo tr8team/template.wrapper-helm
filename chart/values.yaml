@@ -9,4 +9,4 @@ labels:
   team: ESD
 
 # -- app image with version tag
-appVersion: 1.0.1
+appVersion: 1.1.0

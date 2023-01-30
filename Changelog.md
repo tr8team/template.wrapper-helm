@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.0.1...v1.1.0) (2023-01-30)
+
+
+### New Features
+
+* update deployment ([4675e51](https://github.com/tr8team/helm-wrapper-template/commit/4675e51114c721315584e024ff8fe1bd74057944))
+
+
+### Documentation Updates
+
+* changes to make after creating template ([d6a6ba4](https://github.com/tr8team/helm-wrapper-template/commit/d6a6ba4cc8cbec4595c8c8344d6b92e4198a17f1))
+
 ## [1.0.1](https://github.com/tr8team/helm-wrapper-template/compare/v1.0.0...v1.0.1) (2023-01-30)
 
 
