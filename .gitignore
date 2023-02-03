@@ -1,6 +1,9 @@
 ## DirEnv
 .direnv
 
+# Idea
+.idea
+
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json
@@ -166,8 +169,6 @@ web_modules/
 # Optional REPL history
 .node_repl_history
 
-# Output of 'npm pack'
-*.tgz
 
 # Yarn Integrity file
 .yarn-integrity
