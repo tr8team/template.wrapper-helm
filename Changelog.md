@@ -1,3 +1,15 @@
+## [1.2.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.1.1...v1.2.0) (2023-02-06)
+
+
+### Documentation Updates
+
+* instruction for resetting version in Chart.yml during templating ([d3b250d](https://github.com/tr8team/helm-wrapper-template/commit/d3b250d43d294320d42ca49e99db6c743a353e95))
+
+
+### New Features
+
+* deubg now syncs Chart.yaml and install dependencies ([de05c0a](https://github.com/tr8team/helm-wrapper-template/commit/de05c0a197c7163e4e0d0cc1e878e6c51c0fbe27))
+
 ## [1.1.1](https://github.com/tr8team/helm-wrapper-template/compare/v1.1.0...v1.1.1) (2023-01-30)
 
 
