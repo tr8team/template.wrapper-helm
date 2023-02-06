@@ -83,6 +83,8 @@ tasks:
   debug:
     desc: Debug the helm chart
     cmds:
+      - ./scripts/local/chart-substituted.sh
+      - task: deps
       - helm template $RELEASE_NAME ./chart --debug {{.CLI_ARGS}}
 
   install:
