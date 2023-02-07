@@ -1,12 +1,13 @@
 labels:
-  # -- The platform to deploy the chart
-  platform: develop
-  # -- What service is this application
-  service: registry
-  # -- What layer is this service
-  layer: "3"
-  # -- Which team is in charge of this chart
+  # -- L of LPSD of Gotrade Service Tree
+  landscape: develop
+  # -- P of LPSD of Gotrade Service Tree
+  platform: system
+  # -- P of LPSD of Gotrade Service Tree
+  service: template
+  # -- Infrastructure layer this application belongs to
+  layer: "1"
+  # -- Team in charge of this chart
   team: ESD
-
-# -- app image with version tag
-appVersion: {{ .Env.VERSION }}
+  # -- chart version
+  version: {{ .Env.VERSION }}
