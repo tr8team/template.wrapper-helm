@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.2.0...v1.3.0) (2023-02-07)
+
+
+### New Features
+
+* update values.tpl ([2f5afc2](https://github.com/tr8team/helm-wrapper-template/commit/2f5afc2e434ba61fb1015a6a5b8e6274ada9c16d))
+
 ## [1.2.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.1.1...v1.2.0) (2023-02-06)
 
 
