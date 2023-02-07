@@ -81,7 +81,12 @@ types:
       verb: configure
       application: <scope> to <title>
       example: "config(ci): setup nix before executing"
-
+  - type: action
+    desc: Imperative action, such as modifying a values files
+    scopes:
+      default:
+        desc: Imperative action, such as modifying a values files
+        release: false
   - type: release
     desc: Initiate a release (machine initiated)
     scopes:
