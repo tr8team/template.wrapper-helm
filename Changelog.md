@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/tr8team/helm-wrapper-template/compare/v1.3.0...v1.3.1) (2023-02-08)
+
+
+### Bug Fixes
+
+* repo adding oci repository ([19df92e](https://github.com/tr8team/helm-wrapper-template/commit/19df92eb4595e26d9b55a5bbcb781d61b0513fbe))
+
 ## [1.3.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.2.0...v1.3.0) (2023-02-07)
 
 
