@@ -34,6 +34,11 @@ plugins:
       assets:
         - chart/**/*.*
         - Changelog.md
+  - module: "semantic-release-major-tag"
+    config:
+      customTags:
+        - "v${major}"
+        - "v${major}.${minor}"
   - module: "@semantic-release/github"
 
 # Helm
