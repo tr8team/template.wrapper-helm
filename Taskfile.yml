@@ -65,7 +65,7 @@ tasks:
     desc: Add Helm dependency repositories
     dir: chart
     cmds:
-      - yq --indent 0 '.dependencies | map(["helm", "repo", "add", .name, .repository] | join(" ")) | .[]' "Chart.lock" | sh --
+      - yq --indent 0 '.dependencies | map( select( .repository | contains("oci://") | not ) ) | map(["helm", "repo", "add", .name, .repository] | join(" ")) | .[]' "Chart.lock" | sh --
 
   update:
     desc: Update Helm dependencies
