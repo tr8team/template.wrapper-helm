@@ -8,7 +8,7 @@ let
       }
     );
     atomi = (
-      with import (fetchTarball "https://github.com/kirinnee/test-nix-repo/archive/refs/tags/v15.2.0.tar.gz");
+      with import (fetchTarball "https://github.com/kirinnee/test-nix-repo/archive/refs/tags/v17.0.0.tar.gz");
       {
         inherit pls idea-u precommit-patch-nix;
       }

@@ -27,21 +27,6 @@ tasks:
       - task: lint
       - task: enforce
 
-  lint:
-    desc: Run all Linters
-    cmds:
-      - task: lint:default
-
-  fmt:
-    desc: Run all Formatters
-    cmds:
-      - task: fmt:default
-
-  enforce:
-    desc: Run all Enforces
-    cmds:
-      - task: enforce:default
-
   # Utility
   start:cluster:
     desc: Starts the playground cluster to test helm charts
@@ -61,24 +46,30 @@ tasks:
     cmds:
       - ./scripts/ci/publish.sh {{.CLI_ARGS}}
 
-  add:helm:repo:
+  add:repos:
     desc: Add Helm dependency repositories
     dir: chart
     cmds:
-      - yq --indent 0 '.dependencies | map( select( .repository | contains("oci://") | not ) ) | map(["helm", "repo", "add", .name, .repository] | join(" ")) | .[]' "Chart.lock" | sh --
+      - yq --indent 0 '.dependencies | map( select( .repository | contains("https://") ) ) | map(["helm", "repo", "add", .name, .repository] | join(" ")) | .[]' "{{.SRC_FILE}}" | sh --
 
   update:
     desc: Update Helm dependencies
     dir: chart
     cmds:
-      - task: add:helm:repo
+      - task: add:repos
+        vars:
+          SRC_FILE: Chart.yaml
       - helm dependency update
 
   deps:
     desc: Install Helm dependencies
     dir: chart
+    sources:
+      - ./Chart.lock
     cmds:
-      - task: add:helm:repo
+      - task: add:repos
+        vars:
+          SRC_FILE: Chart.lock
       - helm dependency build
   debug:
     desc: Debug the helm chart
