@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.3.1...v1.4.0) (2023-02-15)
+
+
+### New Features
+
+* envrc should install dependencies ([c0382ff](https://github.com/tr8team/helm-wrapper-template/commit/c0382ffee659d47d42eb0db9eeb4edb4253129c8))
+
 ## [1.3.1](https://github.com/tr8team/helm-wrapper-template/compare/v1.3.0...v1.3.1) (2023-02-08)
 
 
