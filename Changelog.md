@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.4.0...v1.5.0) (2023-02-19)
+
+
+### New Features
+
+* reorder pre-commit ([a1bf7c3](https://github.com/tr8team/helm-wrapper-template/commit/a1bf7c348737d502dbdb49137829e1fb94abc5d8))
+
 ## [1.4.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.3.1...v1.4.0) (2023-02-15)
 
 
