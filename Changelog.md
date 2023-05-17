@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/tr8team/template.wrapper-helm/compare/v1.5.0...v1.5.1) (2023-05-17)
+
+
+### Bug Fixes
+
+* CI fetch depth and pre-commit version ([2bb217c](https://github.com/tr8team/template.wrapper-helm/commit/2bb217c87c08cc8f2dd0fb4bb614d11c9a391431))
+
 ## [1.5.0](https://github.com/tr8team/helm-wrapper-template/compare/v1.4.0...v1.5.0) (2023-02-19)
 
 
