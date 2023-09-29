@@ -21,8 +21,6 @@ jobs:
           fetch-depth: 0
 
       - name: Run Pre-commit checks
-        env:
-          NIXPKGS_ALLOW_UNFREE: "1"
         run: nix develop .#ci -c scripts/ci/pre-commit.sh
 
   Release:
