@@ -9,6 +9,7 @@ jobs:
   Pre-commit:
     runs-on:
       - nix
+      - docker
       - ARM64
     steps:
       - name: Atomi CI Environment
@@ -31,6 +32,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on:
       - nix
+      - docker
       - ARM64
     steps:
       - name: AtomiCloud CI Environment
