@@ -9,6 +9,7 @@ jobs:
   Pre-commit:
     runs-on:
       - nix
+      - docker
       - ARM64
     steps:
       - name: Atomi CI Environment
@@ -20,9 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run Pre-commit checks
-        env:
-          NIXPKGS_ALLOW_UNFREE: "1"
-        run: nix-shell nix/shells.nix -A ci --run scripts/ci/pre-commit.sh
+        run: nix develop .#ci -c scripts/ci/pre-commit.sh
 
   Release:
     needs:
@@ -31,6 +30,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on:
       - nix
+      - docker
       - ARM64
     steps:
       - name: AtomiCloud CI Environment
@@ -48,4 +48,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN_SEMANTIC_RELEASE }}
-        run: nix-shell nix/shells.nix -A cd --run scripts/ci/release.sh
+        run: nix develop .#cd -c scripts/ci/release.sh

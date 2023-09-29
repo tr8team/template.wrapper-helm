@@ -15,9 +15,7 @@ tasks:
   setup:
     desc: Setup the repository for development
     cmds:
-      - pre-commit install -c ./config/.pre-commit-config.yaml --install-hooks
-      - pre-commit install -c ./config/.pre-commit-config.yaml -t commit-msg
-      - precommit-nix-patch patch
+      - echo "Setting up...."
 
   # Checks
   check:
