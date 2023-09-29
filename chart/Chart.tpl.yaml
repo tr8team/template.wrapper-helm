@@ -4,6 +4,6 @@ description: Sample Chart Description
 
 type: application
 
-version: { { .Env.VERSION } }
+version: {{.Env.VERSION}}
 
 appVersion: "0.0.0"
