@@ -3,4 +3,4 @@
 # shellcheck shell=bash
 set -euo pipefail
 pls setup
-pre-commit run -c ./config/.pre-commit-config.yaml --all
+time pre-commit run --all-files -v
