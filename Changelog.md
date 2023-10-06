@@ -1,3 +1,22 @@
+## [1.6.0](https://github.com/tr8team/template.wrapper-helm/compare/v1.5.1...v1.6.0) (2023-10-06)
+
+
+### New Features
+
+* migrate to flakes ([8567b3a](https://github.com/tr8team/template.wrapper-helm/commit/8567b3a38a8cabc0d67d43171f69a498ca874520))
+
+
+### Bug Fixes
+
+* add docker ([dcf2cc0](https://github.com/tr8team/template.wrapper-helm/commit/dcf2cc05cd0cf54e0cedf78aa17e797c8ea01b85))
+* add precommit config to gitignore ([188f116](https://github.com/tr8team/template.wrapper-helm/commit/188f11668db64d390d99dcf14fdff358f503f324))
+* CI ([8c79a96](https://github.com/tr8team/template.wrapper-helm/commit/8c79a96e6ae885c411e44f8e2f8bd4f836f33f67))
+* git userfailure for CI ([fa335cd](https://github.com/tr8team/template.wrapper-helm/commit/fa335cdbe3996108287a225caf1591413c2eebf6))
+* incorrect shebang ([2972eb5](https://github.com/tr8team/template.wrapper-helm/commit/2972eb5402fb5896f33a4f7272f2c23d6fb9404e))
+* removed allow unfree ([36a0c59](https://github.com/tr8team/template.wrapper-helm/commit/36a0c59d02193f09bc0b1ac913d1e7f08f9ba17e))
+* removed unused folders ([90bbfd1](https://github.com/tr8team/template.wrapper-helm/commit/90bbfd1eca9c246ba94b2c21b7ea3dce6a90f465))
+* revert incorrect change ([8c262c4](https://github.com/tr8team/template.wrapper-helm/commit/8c262c4cd8820fe030021605b7833b685d2aca0a))
+
 ## [1.5.1](https://github.com/tr8team/template.wrapper-helm/compare/v1.5.0...v1.5.1) (2023-05-17)
 
 
