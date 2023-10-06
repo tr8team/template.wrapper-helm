@@ -1,2 +1,3 @@
-#!/bin/sh
-time pre-commit run --all-files -v
+#!/usr/bin/env bash
+
+pre-commit run --all-files -v

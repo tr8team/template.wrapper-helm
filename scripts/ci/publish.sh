@@ -1,6 +1,5 @@
-#!/nix/var/nix/profiles/default/bin/nix-shell
-#!nix-shell ../../nix/shells.nix -A cd -i bash
-# shellcheck shell=bash
+#!/usr/bin/env bash
+
 set -euo pipefail
 
 export VERSION="$1"
