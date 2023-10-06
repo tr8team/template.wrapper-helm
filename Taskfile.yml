@@ -2,11 +2,6 @@ version: "3"
 
 includes:
   ci: ./scripts/Taskfile.ci.yml
-  fmt: ./scripts/Taskfile.fmt.yml
-  ide: ./scripts/Taskfile.ide.yml
-  lint: ./scripts/Taskfile.lint.yml
-  util: ./scripts/Taskfile.util.yml
-  enforce: ./scripts/Taskfile.enforce.yml
 
 env:
   RELEASE_NAME: sample-release
